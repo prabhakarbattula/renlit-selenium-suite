@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://rentlit-web-master.herokuapp.com/" />
+<title>adding-property</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">adding-property</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn-prop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.current-progress</td>
+	<td>1. Add Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.disabled-progress</td>
+	<td>2. Add Tenant</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]</td>
+	<td>3. Receive Money</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.form-signin-heading.heading-add-property</td>
+	<td>Add Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=property_address</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=property_apartment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=property_city</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=property_state</td>
+	<td>--Select State -- Alabama Alaska American Samoa Arizona Arkansas Armed Forces Africa, Canada, Europe, Middle East Armed Forces Americas (except Canada) Armed Forces Pacific California Colorado Connecticut Delaware District of Columbia Florida Georgia Guam Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Northern Mariana Islands Ohio Oklahoma Oregon Pennsylvania Puerto Rico Rhode Island South Carolina South Dakota Tennessee Texas United States Minor Outlying Islands Utah Vermont Virgin Islands Virginia Washington West Virginia Wisconsin Wyoming</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=property_zip_code</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=property_address</td>
+	<td>Park Cove</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=property_apartment</td>
+	<td>818</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=property_city</td>
+	<td>Aretimus</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=property_state</td>
+	<td>label=Florida</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=property_zip_code</td>
+	<td>12341</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.current-progress</td>
+	<td>1. Add Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.disabled-progress</td>
+	<td>2. Add Tenant</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div/div[3]</td>
+	<td>3. Receive Money</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.form-signin-heading.heading-add-rent</td>
+	<td>Add Rent</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=img[alt=&quot;Info icon&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-3.v-center</td>
+	<td>Rent is</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.input-group-addon</td>
+	<td>$</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=rent_amount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-sm-4.v-center</td>
+	<td>Rent is due on the</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rent_due_on_day</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=rent_due_on_day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-3 &gt; div.input-group &gt; span.input-group-addon</td>
+	<td>st</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-xs-3 &gt; div.input-group &gt; span.input-group-addon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_rent']/div[3]/div[2]/div[3]</td>
+	<td>of every month.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_rent']/div[3]/div[3]/div</td>
+	<td>Rent is late on the</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=rent_late_on_day</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='new_rent']/div[3]/div[3]/div[2]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_rent']/div[3]/div[3]/div[3]</td>
+	<td>of every month.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_rent']/div[3]/div[4]/div</td>
+	<td>Late fee is</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-sm-9 &gt; div.input-group &gt; span.input-group-addon</td>
+	<td>$</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=rent_late_fee</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rent_amount</td>
+	<td>$2,500.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rent_late_fee</td>
+	<td>$150.00</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.disabled-progress</td>
+	<td>1. Add Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.current-progress</td>
+	<td>2. Add Tenant</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div/div[3]</td>
+	<td>3. Receive Money</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.form-signin-heading.heading-add-tenant</td>
+	<td>Tenant Profile</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tenant_property_first_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tenant_property_last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tenant_property_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_tenant_property']/div[3]/div</td>
+	<td>Add Multiple Tenants</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Add Multiple Tenants</td>
+	<td>Add Multiple Tenants</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Check Background</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-12 &gt; div.checkbox &gt; label</td>
+	<td>I would like to upload a lease to keep on file</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-12 &gt; div.checkbox &gt; label</td>
+	<td>I would like to upload a lease to keep on file</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_tenant_property']/div[5]/div/div/label</td>
+	<td>I would like to have Rentlit create a lease</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_tenant_property']/div[5]/div/div/label</td>
+	<td>I would like to have Rentlit create a lease</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=I HAVE NO TENANT YET</td>
+	<td>I HAVE NO TENANT YET</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tenant_property_first_name</td>
+	<td>Mark</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tenant_property_last_name</td>
+	<td>Smith</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tenant_property_email</td>
+	<td>mark@example.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=createlease</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.disabled-progress</td>
+	<td>1. Add Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.current-progress</td>
+	<td>2. Add Tenant</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div/div[3]</td>
+	<td>3. Receive Money</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.form-signin-heading.heading-add-rent</td>
+	<td>Move In Costs</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#info &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.row &gt; div.col-xs-12 &gt; p</td>
+	<td>List all fees associated with your tenant's first payment.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=property_move_in_costs_attributes_0_expense</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=property_move_in_costs_attributes_0_amount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Add Item</td>
+	<td>Add Item</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='edit_property_7']/div[5]/div</td>
+	<td>Add Item</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>Total Costs: $0.00</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='edit_property_7']/div[6]/div</td>
+	<td>After this initial move in charge, your tenant will pay</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=input[name=&quot;due date&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-10.v-center</td>
+	<td>months of rent at $2500.00.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=property_move_in_costs_attributes_0_expense</td>
+	<td>Deposit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=property_move_in_costs_attributes_0_amount</td>
+	<td>$500.00</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.disabled-progress</td>
+	<td>1. Add Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div/div[2]</td>
+	<td>2. Add Tenant</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-xs-4.current-progress</td>
+	<td>3. Receive Money</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.form-signin-heading.heading-add-bank-info</td>
+	<td>Add BANK INFO</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;Info icon&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=bank_info_routing_no</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=bank_info_account_no</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>I agree to terms</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>I agree to terms</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=img[alt=&quot;Bank of me&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='new_bank_info']/div[7]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bank_info_routing_no</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bank_info_account_no</td>
+	<td>321</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=createlease</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.h4</td>
+	<td>New Tenant Added!</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>Mark</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-md-8.zero-margin-padding</td>
+	<td>New Tenant Added!<br /> Mark added as tenant in Park Cove 818</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1.list-group-item-heading</td>
+	<td>818</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.list-group-item-text</td>
+	<td>Park Cove</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.panel-body</td>
+	<td>$2,500</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.msg-number</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=ReceiveRent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.btn.edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td>Remove Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td>Remove Property</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-md-9.hidden-xs &gt; span.h4</td>
+	<td>Message Feed</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div[2]/ul/li</td>
+	<td>Mark Smith</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.btn.edit-tenant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.phone-icon</td>
+	<td>904.626.4810</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=View Background Check</td>
+	<td>View Background Check</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=View Lease Document</td>
+	<td>View Lease Document</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.dollaramount</td>
+	<td>2,500</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.rightlate</td>
+	<td>Late Fee: $150</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[4]/div[3]</td>
+	<td>Rental History</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div[3]/div[3]/div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.edit-tenant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=rentlitModalLabel</td>
+	<td>Edit tenant</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=button.close</td>
+	<td>× Close</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tenant_first_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tenant_last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=tenant_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>Check Background</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.form-actions &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tenant_first_name</td>
+	<td>Mark-edit</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tenant_email</td>
+	<td>mark-edit@example.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tenant_last_name</td>
+	<td>Smith-edit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.form-actions &gt; input[name=&quot;commit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[3]/div[2]/ul/li</td>
+	<td>Mark-edit Smi...</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong</td>
+	<td>Mark-edit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.edit-tenant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li/a[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Do you want to remove Mark-edit Smith-edit as tenant?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
